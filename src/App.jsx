@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import './App.css'
 import authService from "./appwrite/auth"
@@ -20,7 +20,6 @@ function App() {
       }
     })
     .finally(() => setLoading(false))
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
   return !loading ? (
@@ -28,7 +27,7 @@ function App() {
       <div className='w-full block'>
         <Header />
         <main>
-        TODO: <Outlet />
+        TODO:  <Outlet />
         </main>
         <Footer />
       </div>

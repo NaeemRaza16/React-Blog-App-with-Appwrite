@@ -95,7 +95,7 @@ export class Service{
             return false
         }
     }
- 
+
     // file upload service
 
     async uploadFile(file){
